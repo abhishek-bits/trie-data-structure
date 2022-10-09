@@ -13,3 +13,7 @@ Implementation of Trie Data Structure in Java.
 - [Array based implementation](https://github.com/abhishek-bits/trie-data-structure/blob/master/src/trie/TrieUsingArray.java)
 
 - HashMap based implementation (will be added soon).
+
+## Output
+
+![Output Snapshot](https://github.com/abhishek-bits/trie-data-structure/blob/master/Output.PNG?raw=true)
