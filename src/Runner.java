@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.List;
 
 import trie.Trie;
@@ -15,23 +16,27 @@ public class Runner {
 			trie.add(word);
 		}
 		
+		System.out.println("Words in Trie: " + Arrays.toString(words));
+		
 		String prefix = "dog";
 		
 		List<String> matchingWords = trie.getMatchingWords(prefix);
 		
-		System.out.println(matchingWords);
+		System.out.println("Words matching prefix: " + prefix + " = " + matchingWords);
 		
 		prefix = "de";
 		
 		matchingWords = trie.getMatchingWords(prefix);
 		
-		System.out.println(matchingWords);
+		System.out.println("Words matching prefix: " + prefix + " = " + matchingWords);
 		
 		trie.add("dear");
 		
+		System.out.println("Word: \"dear\" newly added to Trie");
+		
 		matchingWords = trie.getMatchingWords(prefix);
 		
-		System.out.println(matchingWords);
+		System.out.println("Words matching prefix: " + prefix + " = " + matchingWords);
 		
 	}
 }
