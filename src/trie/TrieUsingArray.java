@@ -60,12 +60,13 @@ public class TrieUsingArray implements Trie {
 		List<String> res = new ArrayList<>();
 		TrieNode par = root;
 		
+		// walk through the prefix first
 		for(char c : prefix.toCharArray()) {
 			int idx = c - 'a';
 			par = par.children[idx];
 		}
 		
-		// first check if this prefix is itself an 
+		// first check if this prefix is itself an ending character
 		if(par.isEndingChar) {
 			res.add(prefix);
 		}
