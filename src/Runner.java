@@ -3,12 +3,15 @@ import java.util.List;
 
 import trie.Trie;
 import trie.TrieUsingArray;
+import trie.TrieUsingHashMap;
 
 public class Runner {
 	
 	public static void main(String[] args) {
 		
-		Trie trie = new TrieUsingArray();
+		Trie trie 
+//		= new TrieUsingArray();
+		= new TrieUsingHashMap();
 		
 		String[] words = {"dog", "doggy", "deer", "deal"};
 		
@@ -37,6 +40,5 @@ public class Runner {
 		matchingWords = trie.getMatchingWords(prefix);
 		
 		System.out.println("Words matching prefix: " + prefix + " = " + matchingWords);
-		
 	}
 }
